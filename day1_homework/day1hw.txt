@@ -1,0 +1,20 @@
+1)
+/Users/cmdb/data/fastq $ fastqc -o qc_output
+
+2)
+/Users/cmdb/data/BDGP6 $ hisat2 -p 4 BDGP6 -U SRR072893.fastq -S table-of-hits.sam
+21892898 reads; of these:
+  21892898 (100.00%) were unpaired; of these:
+    4679237 (21.37%) aligned 0 times
+    14921924 (68.16%) aligned exactly 1 time
+    2291737 (10.47%) aligned >1 times
+78.63% overall alignment rate
+
+3)
+samtools view -Sb table-of-hits.sam > output.bam
+samtools sort output.bam > sortedoutput.bam
+samtools index sortedoutput.bam > indexedoutput.bam
+
+4) 
+stringtie sortedoutput.bam -G BDGP6.Ensembl.85.gtf -o out_gtf -p 4 -e -B
+
