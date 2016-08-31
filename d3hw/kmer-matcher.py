@@ -22,9 +22,11 @@ for ident, sequence in (fasta.FASTAReader(target_fa)):
     for i in range(0, len(sequence) - k):
         kmer = sequence[i:i+k]
         if kmer not in kmer_loci:
-            kmer_loci[kmer] = [ident, i]
+            kmer_loci[kmer] = [(ident, i)]
+            #kmer_loci[kmer] = [ident, i]
         else:
-            kmer_loci[kmer].append(i)
+            kmer_loci[kmer].append((ident,i))
+            #kmer_loci[kmer].append(i)
 
 #generate sequential kmers from query, check if in kmer_loci dict, then print results
 for ident2, sequence2 in (fasta.FASTAReader(query_fa)):
@@ -32,7 +34,9 @@ for ident2, sequence2 in (fasta.FASTAReader(query_fa)):
     for i in range(0, len(sequence2) - k):
         kmer = sequence2[i:i+k]
         if kmer in kmer_loci:
-            print kmer_loci[kmer][0], kmer_loci[kmer][1:], i, kmer
+            for ident, pos in kmer_loci[kmer]:
+                #print kmer_loci[kmer][0], kmer_loci[kmer][1:], i, kmer
+                print ident, pos, i, kmer
         
 
         
