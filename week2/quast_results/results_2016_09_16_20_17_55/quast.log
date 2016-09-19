@@ -1,0 +1,76 @@
+/usr/local/Cellar/quast/4.2/quast.py velvet_out/contigs.fa spades_out/contigs.fasta hvelvet_out/contigs.fa hspades_out/contigs.fasta
+
+Version: 4.2, build 21.07.2016 14:03
+
+System information:
+  OS: Darwin-15.6.0-x86_64-i386-64bit (macosx)
+  Python version: 2.7.12
+  CPUs number: 4
+
+Started: 2016-09-16 20:17:55
+
+Logging to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/quast.log
+NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+
+Main parameters: 
+  Threads: 1, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  1  velvet_out/contigs.fa ==> velvet_out_contigs
+  2  spades_out/contigs.fasta ==> spades_out_contigs
+  3  hvelvet_out/contigs.fa ==> hvelvet_out_contigs
+  4  hspades_out/contigs.fasta ==> hspades_out_contigs
+
+2016-09-16 20:18:00
+Running Basic statistics processor...
+  Contig files: 
+    1  velvet_out_contigs
+    2  spades_out_contigs
+    3  hvelvet_out_contigs
+    4  hspades_out_contigs
+  Calculating N50 and L50...
+    1  velvet_out_contigs, N50 = 636, L50 = 7, Total length = 9865, GC % = 50.93, # N's per 100 kbp =  0.00
+    2  spades_out_contigs, N50 = 718, L50 = 8, Total length = 15923, GC % = 51.21, # N's per 100 kbp =  0.00
+    3  hvelvet_out_contigs, N50 = 19863, L50 = 2, Total length = 99404, GC % = 52.56, # N's per 100 kbp =  0.00
+    4  hspades_out_contigs, N50 = 100000, L50 = 1, Total length = 100000, GC % = 52.59, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/coverage_histogram.pdf
+  Drawing velvet_out_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/velvet_out_contigs_coverage_histogram.pdf
+  Drawing spades_out_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/spades_out_contigs_coverage_histogram.pdf
+  Drawing hvelvet_out_contigs coverage histogram (bin size: 11x)...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/hvelvet_out_contigs_coverage_histogram.pdf
+  Drawing hspades_out_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/basic_stats/hspades_out_contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2016-09-16 20:18:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2016-09-16 20:18:05
+RESULTS:
+  Text versions of total report are saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/report.html
+  PDF version (tables and plots) is saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/report.pdf
+  Icarus (contig browser) is saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/icarus.html
+  Log saved to /Users/cmdb/complab/week2/quast_results/results_2016_09_16_20_17_55/quast.log
+
+Finished: 2016-09-16 20:18:05
+Elapsed time: 0:00:09.611207
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
