@@ -1,0 +1,19 @@
+PLINK v1.90b3 64-bit (11 Jan 2015)
+5 arguments: --freqx --out allelefreq --vcf BYxRM_GenoData.vcf
+Hostname: bio-cmdb-23.local
+Working directory: /Users/cmdb/complab/week4
+Start time: Fri Oct  7 16:01:46 2016
+
+Random number seed: 1475870506
+4096 MB RAM detected; reserving 2048 MB for main workspace.
+--vcf: allelefreq-temporary.bed + allelefreq-temporary.bim +
+allelefreq-temporary.fam written.
+11623 variants loaded from .bim file.
+1008 people (0 males, 0 females, 1008 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to allelefreq.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1008 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+--freqx: Allele frequencies (founders only) written to allelefreq.frqx .
+
+End time: Fri Oct  7 16:01:46 2016

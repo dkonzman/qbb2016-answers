@@ -1,0 +1,22 @@
+PLINK v1.90b3 64-bit (11 Jan 2015)
+6 arguments: --out pcageno --pca 2 --vcf BYxRM_GenoData.vcf
+Hostname: bio-cmdb-23.local
+Working directory: /Users/cmdb/complab/week4
+Start time: Fri Oct  7 14:59:34 2016
+
+Random number seed: 1475866774
+4096 MB RAM detected; reserving 2048 MB for main workspace.
+--vcf: pcageno-temporary.bed + pcageno-temporary.bim + pcageno-temporary.fam
+written.
+11623 variants loaded from .bim file.
+1008 people (0 males, 0 females, 1008 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to pcageno.nosex .
+Using up to 4 threads (change this with --threads).
+Before main variant filters, 1008 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+11623 variants and 1008 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to pcageno.eigenval and pcageno.eigenvec .
+
+End time: Fri Oct  7 14:59:35 2016
